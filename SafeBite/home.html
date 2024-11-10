@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeBite - Personalized Meal Plans</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="icon.jpg">
+</head>
+<body>
+  <header class="main-header">
+    <div class="container">
+      <h1>Safe<span>Bite!</span></h1>
+      <p>Wholesome Meals, Vibrant Lives:</p>
+      <p>Your Health Journey Starts Here</p>
+      <a href="register.html">
+        <button>Register</button>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+        <h1>Our Vision</h1>
+        <p><span>Create a healthier</span> world through personalized meal <br> 
+            plans that improve quality of life and prevent disease <br>
+            progression.
+        </p>
+    </div>
+  </section>
+  <hr>
+
+  <section class="statistics-section">
+    <div class="container stats-grid">
+      <div class="stat">
+        <h3>4.6M</h3>
+        <p>People with Diabetes in Germany</p>
+      </div>
+      <div class="stat">
+        <h3>117M</h3>
+        <p>Diet Restricting Conditions in the USA</p>
+      </div>
+      <div class="stat">
+        <h3>36%</h3>
+        <p>World Population Has a Diet Plan</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section class="problem-section">
+    <div class="container">
+      <h2>Objective Problems</h2>
+      <div class="problem">
+        <h3><span class="cross">✕</span> Financial Impact</h3>
+        <p>Medical costs burden patients, reducing quality of life and adding financial strain.</p>
+      </div>
+      <div class="problem">
+        <h3><span class="cross">✕</span> User Experience</h3>
+        <p>Generic meal plans fail to address individual health requirements, leading to ineffective results.</p>
+      </div>
+      <div class="problem">
+        <h3><span class="cross">✕</span> Complexity Issues</h3>
+        <p>Understanding complex dietary needs without guidance is overwhelming, hindering progress.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section class="solution-section">
+    <div class="container">
+      <h2>Our Solutions</h2>
+      <div class="solution">
+        <h3><span class="check">✓</span> Personalized Meal Plans</h3>
+        <p>Meal plans created to specific dietary requirements and health conditions.</p>
+      </div>
+      <div class="solution">
+        <h3><span class="check">✓</span> Expert Advice Service</h3>
+        <p>Nutritionists assist in developing meal plans and offer support.</p>
+      </div>
+      <div class="solution">
+        <h3><span class="check">✓</span> Grocery Delivery</h3>
+        <p>A grocery list will be made and delivered to your home.</p>
+      </div>
+    </div>
+  </section>
+  <hr>
+
+  <section class="meal-plans-section">
+    <div class="container">
+      <h2>Get Your Personalized Meal Plan</h2>
+      <p>Fill in the details below and let us generate a plan tailored to your needs.</p>
+      <form id="meal-plan-form">
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+
+        <label for="goal">Goal:</label>
+        <select id="goal" required>
+          <option value="weight_loss">Weight Loss</option>
+          <option value="health_maintenance">Health Maintenance</option>
+          <option value="build_muscle">Build Muscle</option>
+        </select>
+
+        <label for="diet">Dietary Preferences:</label>
+        <select id="diet" required>
+          <option value="vegan">Vegan</option>
+          <option value="vegetarian">Vegetarian</option>
+          <option value="non_veg">Non-Vegetarian</option>
+        </select>
+
+        <button type="submit">Get My Plan</button>
+      </form>
+
+      <div id="meal-plan-output" class="meal-plan-output" style="display:none;">
+        <h3>Your Meal Plan:</h3>
+        <div id="meal-plan-details"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+      <p>&copy; 2024 SafeBite. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
